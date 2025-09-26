@@ -1,0 +1,10 @@
+# Pokémon Sprite SVD Compression Notebook
+
+This Jupyter Notebook demonstrates how Singular Value Decomposition (SVD) can be used to compress colour images, using 96×96 Pokémon sprites as the source dataset.
+
+It will:
+1. Automatically download a handful of sample sprites from the public PokeAPI sprite repository (front-facing non-shiny versions).
+2. Display the original images.
+3. Apply rank-k SVD approximations (k=5, 15, 30) separately to each RGB channel.
+4. Plot side-by-side comparisons of original vs. reconstructed sprites, plus the Mean-Squared-Error (MSE) for each k.
+5. Calculate the approximate compression ratio (ratio of stored SVD values vs. original pixel count) to illustrate space savings.
